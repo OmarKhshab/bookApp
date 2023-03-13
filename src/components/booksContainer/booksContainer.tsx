@@ -13,7 +13,6 @@ function BookShelfs() {
   useEffect(() => {
     dispatch(getAllBooksApi())
   }, [dispatch]);
-  const setShowSearchpage = ()=> {}
   const allBooks: BooksModel[] = useAppSelector<BooksModel[]>((state) => state?.books?.books);
   const shelfies = {
     currentlyReading: allBooks.filter(book => book.shelf === "currentlyReading"),

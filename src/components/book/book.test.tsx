@@ -60,6 +60,6 @@ test('renders Book ', async () => {
   };
   
   render(<BrowserRouter><Provider store={store}><Book book={bookexample}/></Provider></BrowserRouter>);
-    const list = screen.getByRole("optionlist")
+    const list = screen.getByRole("contentinfo")
     expect(list).toBeInTheDocument();
 });

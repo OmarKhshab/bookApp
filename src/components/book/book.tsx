@@ -37,7 +37,7 @@ const Book : React.FC<Props> = ({ book }) => {
             }}
           ></div>
           <div className="book-shelf-changer">
-            <select value={book?.shelf} onChange={changeShelf} role="optionlist">
+            <select value={book?.shelf} onChange={changeShelf} role="contentinfo" defaultValue="none">
               <option value="none" disabled>
                 Move to...
               </option>
