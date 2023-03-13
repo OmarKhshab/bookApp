@@ -13,7 +13,7 @@ import BookDetails from './components/book/bookDetails/bookDetails';
 
 function App() {
   return (
-    <div className="App">
+    <div role='maindev' className="App">
      <Routes>
         <Route path="/" element={<BookShelfs/>} />
         <Route path="/search" element={<Search/>} />

@@ -18,7 +18,7 @@ function Search() {
   
   const searchedBook: BooksModel[] = useAppSelector<BooksModel[]>((state) => state?.books?.searchResultBooks);
   return (
-    <div className="search-books">
+    <div className="search-books" role="search">
     <div className="search-books-bar">
       <a onClick={()=> navigate("/")}
         className="close-search"

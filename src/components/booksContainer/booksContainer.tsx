@@ -21,7 +21,7 @@ function BookShelfs() {
     read: allBooks.filter(book => book.shelf === "read")
   }
   return (
-    <div className="list-books">
+    <div className="list-books" role="container">
     <div className="list-books-title">
       <h1>MyReads</h1>
     </div>

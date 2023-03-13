@@ -12,7 +12,6 @@ import { useNavigate } from 'react-router-dom';
 function BookDetails() {
 const Book: BooksModel = useAppSelector<BooksModel>((state) => state?.books?.book);
 const navigate = useNavigate();
-console.log(Book);
   return (
     <React.Fragment>
 
@@ -21,7 +20,7 @@ console.log(Book);
   >
     Close
   </a>
-    <div className="center">
+    <div role="bookDetailedView" className="center">
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         title={Book?.authors}
